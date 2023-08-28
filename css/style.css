@@ -67,6 +67,7 @@ img {
   /* line-height: 1.16; 116.667% */
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .studio-header {
@@ -110,6 +111,7 @@ img {
 .link:focus,
 .link:active {
   color: var(--ocean);
+  outline: none;
 }
 
 /* .contacts-link:hover,
@@ -152,22 +154,33 @@ img {
 
 /* hero start */
 .hero-section {
-  /* to center text and buttons :) */
-  background-color: var(--navyblue);
-  padding: 188px 0;
-  /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-office.jpg);
+  background-color: var(--grey);
+}
+.hero-section {
+  /* to center text and buttons */
+  /* padding: 188px 0; */
+  /* background: var(--grey, rgba(46, 47, 66, 0.7)); */
+  /* background-image: url(/images/hero-office.jpg); */
+  /* background-blend-mode: screen; */
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; */
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-office.jpg);
 }
 
 .container-hero {
-  /* to center text and buttons :) */
+  /* to center text and buttons */
   text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  /* to center text and buttons, una naka set sa hero-section*/
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -202,6 +215,7 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--ocean);
+  outline: none;
 }
 /* hero end */
 
@@ -281,6 +295,7 @@ img {
 /* team end */
 
 /* footer start */
+/* Unang setup sa footer */
 /* .footer {
   background-color: var(--navyblue);
   padding: 100px 0;
@@ -321,6 +336,7 @@ img {
   border-color: var(--ocean);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
 .port-buttons-list {
@@ -358,25 +374,44 @@ img {
 /* portfolio end */
 
 /* team icons start */
-.team-icon {
-  margin-top: 8px;
-}
 .icon-team {
   display: flex;
   justify-content: space-evenly;
-  /* gap: 24px; */
+  align-items: center;
 }
-.team-icon-item {
+
+.icon-list {
+  background: var(--iris);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.team-icon {
+  fill: var(--cloud);
+  margin: 12px;
+}
+
+.icon-list:hover {
+  background: var(--ocean);
+}
+
+.team-icon-item:focus {
+  outline: none;
+}
+
+/* ito sakto sana pag focus at hover sa bilog */
+/* .team-icon-item {
   fill: var(--cloud);
   background: var(--iris);
   border-radius: 50%;
   padding: 12px 12px 9px;
-}
+} */
 
-.team-icon-item:hover,
-.team-icon-team:focus {
+/* .team-icon-item:hover,
+.team-icon-item:focus {
   background: var(--ocean);
-}
+} */
 /* team icons end */
 
 /* features icons starts */
@@ -416,17 +451,6 @@ img {
 }
 /* costumers icons end */
 
-/* footers icons start */
-.container-footer {
-  display: flex;
-}
-
-.social-media-icon {
-  fill: var(--cloud);
-  border: 1px solid;
-}
-/* footers icons end */
-
 /* footer start */
 .footer {
   background-color: var(--navyblue);
@@ -447,3 +471,39 @@ img {
   letter-spacing: 0.32px;
 }
 /* footer end */
+
+/* footers icons start */
+.social-media-items {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.social-media-list {
+  background: var(--iris);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.social-media-icon {
+  fill: var(--cloud);
+  margin: 8px;
+}
+
+.social-media-list:hover {
+  background: var(--green);
+}
+
+.social-media-link:focus {
+  outline: none;
+}
+
+.container-footer {
+  display: flex;
+}
+
+.container-weblogo {
+  flex-shrink: 2;
+}
+/* footers icons end */
