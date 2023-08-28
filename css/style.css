@@ -247,13 +247,24 @@ img {
 .text-item {
   color: var(--slate);
   margin-bottom: 8px;
-  /* margin-bottom: 32px; */
 }
 
 /* features start */
 .feature-list {
   display: flex;
   gap: 22px;
+}
+
+.feature-design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 22px 100px; */
+  /* width: 264px; */
+  height: 112px;
+  border-radius: 4px;
+  background: var(--cloud);
+  margin-bottom: 8px;
 }
 /* features end */
 
@@ -270,50 +281,160 @@ img {
 /* services end */
 
 /* team start */
-.team {
+.section-team {
   background-color: var(--cloud);
 }
 
 .team-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 24px;
 }
 
 .team-item {
-  border-radius: 0px 0px 4px 4px;
   background: var(--white);
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.card-team-item {
+.card-team {
   text-align: center;
-  padding: 32px 0;
+  margin: 32px 0;
+}
+
+.team-icon-list {
+  display: flex;
+  /* justify-content: center; */
+  /* gap: 24px; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.team-icon-item {
+  width: 40px;
+  height: 40px;
+}
+
+.team-icon-link {
+  fill: var(--cloud);
+  background: var(--iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background: var(--ocean);
+  outline: none;
 }
 /* team end */
 
-/* footer start */
-/* Unang setup sa footer */
-/* .footer {
-  background-color: var(--navyblue);
-  padding: 100px 0;
+/* costumers starts */
+.section-costumers {
+  background-color: var(--white);
 }
 
-.container-footer {
+.costumers-list {
   display: flex;
-  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.costumers-item {
+  width: 168px;
+  height: 88px;
+}
+
+.costumers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--lightslate);
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  fill: var(--lightslate);
+}
+
+.costumers-link:hover,
+.costumers-link:focus {
+  fill: var(--ocean);
+  border: 1px solid var(--ocean);
+  outline: var(--ocean);
+}
+/* costumers end */
+
+/* footer start */
+.footer {
+  background-color: var(--navyblue);
+  padding: 100px 0;
 }
 
 .footer-item-text {
   color: var(--cloud);
   margin-top: 17.5px;
+}
+
+.social-media-title {
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+/* first setup on footer */
+/* .container-footer {
+  display: flex;
+  flex-direction: column;
 } */
+
+.container-footer {
+  display: flex;
+}
+
+.container-weblogo {
+  flex-shrink: 2;
+}
+
+.social-media-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.social-media-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-media-link {
+  fill: var(--cloud);
+  background: var(--iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  background: var(--green);
+  outline: none;
+}
 /* footer end */
 
-/* portfolio start*/
-.buttons-port {
+/* portfolio page start*/
+.project-buttons-item {
   color: var(--iris);
   background: var(--cloud);
   border: 1px solid var(--cornflower);
@@ -328,8 +449,8 @@ img {
   padding: 12px 24px;
 }
 
-.buttons-port:hover,
-.buttons-port:focus,
+.project-buttons-item:hover,
+.project-buttons-item:focus,
 .current-active {
   color: var(--white);
   background: var(--ocean);
@@ -339,9 +460,8 @@ img {
   outline: none;
 }
 
-.port-buttons-list {
+.projects-buttons-list {
   display: flex;
-  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
   gap: 24px;
@@ -366,144 +486,14 @@ img {
   border-top: none;
 }
 
-.projects-item:hover {
+.projects-link {
+  display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-/* portfolio end */
-
-/* team icons start */
-.icon-team {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.icon-list {
-  background: var(--iris);
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-}
-
-.team-icon {
-  fill: var(--cloud);
-  margin: 12px;
-}
-
-.icon-list:hover {
-  background: var(--ocean);
-}
-
-.team-icon-item:focus {
-  outline: none;
-}
-
-/* ito sakto sana pag focus at hover sa bilog */
-/* .team-icon-item {
-  fill: var(--cloud);
-  background: var(--iris);
-  border-radius: 50%;
-  padding: 12px 12px 9px;
-} */
-
-/* .team-icon-item:hover,
-.team-icon-item:focus {
-  background: var(--ocean);
-} */
-/* team icons end */
-
-/* features icons starts */
-.icons-features {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 22px 100px;
-  border-radius: 4px;
-  background: var(--cloud);
-  margin-bottom: 8px;
-}
-/* features icons ends */
-
-/* costumers icons starts */
-.section-costumers {
-  background-color: var(--white);
-}
-
-.costumers-list {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-}
-
-.costumers-icon {
-  border: 1px solid var(--lightslate);
-  border-radius: 4px;
-  width: 168px;
-  height: 88px;
-  padding: 16px 32px;
-  fill: var(--lightslate);
-}
-
-.costumers-icon:hover {
-  fill: var(--ocean);
-}
-/* costumers icons end */
-
-/* footer start */
-.footer {
-  background-color: var(--navyblue);
-  padding: 100px 0;
-}
-
-.footer-item-text {
-  color: var(--cloud);
-  margin-top: 17.5px;
-}
-
-.social-media-title {
-  color: var(--white);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
-}
-/* footer end */
-
-/* footers icons start */
-.social-media-items {
-  display: flex;
-  gap: 16px;
-  margin-top: 16px;
-}
-
-.social-media-list {
-  background: var(--iris);
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-}
-
-.social-media-icon {
-  fill: var(--cloud);
-  margin: 8px;
-}
-
-.social-media-list:hover {
-  background: var(--green);
-}
-
-.social-media-link:focus {
-  outline: none;
-}
-
-.container-footer {
-  display: flex;
-}
-
-.container-weblogo {
-  flex-shrink: 2;
-}
-/* footers icons end */
+/* portfolio page end */
